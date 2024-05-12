@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/addPTextViewTopic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/TODO"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/addPEditTextTopic"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:hint="Reminder" />
+
+            <TextView
+                android:id="@+id/addPTextViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="@string/date"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/addPEditTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="datetime"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:hint="enter the date"
+                />
+
+            <TextView
+                android:id="@+id/addPTextViewTime"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/time"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/addPEditTextTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time"
+                android:textAlignment="center"
+                 android:textSize="20dp"
+                android:hint="enter the date"/>
+
+            <TextView
+                android:id="@+id/addPTextViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:text="@string/details"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/addPEditTextMultiLineDetails"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:hint="add Details"/>
+
+            <TextView
+                android:id="@+id/addPTextViewPLevel"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:text="@string/pLevel"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/addPSpinnerPLevel"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/addPBtnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:backgroundTint="@color/black"
+                android:text="Button" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
